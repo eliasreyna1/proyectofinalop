@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #fff;
+}
+img{
+    max-width: 100%;
+    width: 50%;
+    border-radius: 50%;
+    border-style: double;
+}
+h2{
+    text-align: center;
+}
+h3{
+    color: #edb705;
+}
+.h3{
+    background-color: #edb705;
+}
+.social-section{
+    display: flex;
+    float: left;
+    background-color:#393838;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50%;
+    width: 25%;
+        
+}
+.bar {
+    width: 70%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10%;
+}
+.progress {
+    width: 50%;
+    height: 100%;
+    background-color: #edb705;
+}
+
+.home-frace{
+   font-size: 30px; 
+}
+
+.header-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+    flex-direction: row;
+    background-color: #edb705;
+    width: 75%;
+        
+}
+.header-section a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    margin-right: 50px;
+    font-style: italic;
+    
+}
+  
+#menu{
+    display: flex;
+
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 15px;
+}
+#toggle-nav{
+    display: none;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 75%;
+        
+}
+.icon-link {
+    text-decoration: none;
+    font-size: 60px auto;
+    padding: 25px;
+    color: #ffffff;
+    width: 10%;
+    font-size: 1.5em; 
+}
+.icon-link:hover {
+    color: #edb705;
+}
+
+.conteiner-dowload{
+    background-color: transparent;
+    border-radius: 40%;
+    font-size: 60px;
+    color: #edb705;
+}
+.conteiner-dowload:hover{
+    color: #eee;
+}
+
+.download-text{
+    font-size: 20px;
+}
+.about-style{
+    background-color: #edb705;
+}
+
+.footer{
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    #toggle-nav{
+        display: block;
+        color: #000000;
+        margin: 7px;
+        font-size: 35px;
+        
+    }
+    #toggle-nav.active{
+        display: block;
+        color: #000000;
+        margin: 7px;
+        font-size: 35px;
+        text-align: right;
+        
+    }
+
+
+    #list.active{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+    #menu.active{
+        display: flex;
+        flex-direction: column;
+    }
+}
